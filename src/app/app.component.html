@@ -1,74 +1,48 @@
-<div class="container">
+<navbar></navbar>
+<router-outlet></router-outlet>
+<footer class="container py-5">
   <div class="row">
-      <div class="col ">
-          <mat-card id="card" style="text-align: center;">
-              <mat-card-title>
-                  Post Your Question On The Topic {{ topic }}
-              </mat-card-title>
-           <hr>
-              <mat-card-content>
-                  <mat-form-field appearance="fill">
-                      <mat-label> Topic</mat-label>
-                      <mat-select [(ngModel)] = "topic">
-                        <mat-option *ngFor="let topic of topicArray" [value]="topic.viewValue">
-                          {{topic.viewValue}}
-                        </mat-option>
-                      </mat-select>
-                    </mat-form-field>
-                  <mat-form-field>
-                      <input matInput type ="text" name="topicQuestion" placeholder="Add Your Question">
-                  </mat-form-field><br/>
-          
-                  <mat-form-field>
-                      <input matInput name = "topicAnswer" placeholder="Answer">
-                      <textarea matInput name = "topicAnswer" placeholder="Ex. It makes me feel..."></textarea>
-                  </mat-form-field><br/>
-                  <button class = "questionSubmit" mat-raised-button color="primary">Add</button>            
-              </mat-card-content>
-              </mat-card>
-              
-      </div> 
-</div>
-
-</div>
-
-<div class="container">
-   <navbar></navbar>
-   <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 class="mb-1">Memory Tricks</h1>
-   
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Go To Spellogram</a>
+    <div class="col-12 col-md">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+      <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
     </div>
-    <div class="overlay"></div>
-  </header>
- <router-outlet></router-outlet>
-  <footer class="footer text-center">
-    <div class="container">
-      <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
-            <i class="icon-social-facebook"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#!">
-            <i class="icon-social-twitter"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#!">
-            <i class="icon-social-github"></i>
-          </a>
-        </li>
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Cool stuff</a></li>
+        <li><a class="text-muted" href="#">Random feature</a></li>
+        <li><a class="text-muted" href="#">Team feature</a></li>
+        <li><a class="text-muted" href="#">Stuff for developers</a></li>
+        <li><a class="text-muted" href="#">Another one</a></li>
+        <li><a class="text-muted" href="#">Last time</a></li>
       </ul>
-      <p class="text-muted small mb-0">Copyright &copy; Your Website 2020</p>
     </div>
-  </footer>
-
-  <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
-</div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Resource</a></li>
+        <li><a class="text-muted" href="#">Resource name</a></li>
+        <li><a class="text-muted" href="#">Another resource</a></li>
+        <li><a class="text-muted" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Business</a></li>
+        <li><a class="text-muted" href="#">Education</a></li>
+        <li><a class="text-muted" href="#">Government</a></li>
+        <li><a class="text-muted" href="#">Gaming</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Team</a></li>
+        <li><a class="text-muted" href="#">Locations</a></li>
+        <li><a class="text-muted" href="#">Privacy</a></li>
+        <li><a class="text-muted" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>

@@ -1,82 +1,19 @@
-.card-deck {
-    margin: 0 -15px;
-    justify-content: space-between;
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width:768px) {  
+    .sm {color:red;font-weight:bold;}
   }
-  
-  .card-deck .card {
-    margin: 0 0 1rem;
+   
+  /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+  @media (min-width: 768px) and (max-width:992px) {  
+   .md {color:red;font-weight:bold;}
   }
-  .card-img-top {
-      height : 200px;
-      overflow : hidden;
+   
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width:1200px) { 
+   .lg {color:red;font-weight:bold;}
   }
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    .card-deck .card {
-      -ms-flex: 0 0 48.7%;
-      flex: 0 0 48.7%;
-    }
+   
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {  
+      .xl {color:red;font-weight:bold;}
   }
-  
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    .card-deck .card {
-      -ms-flex: 0 0 32%;
-      flex: 0 0 32%;
-    }
-  }
-  
-  @media (min-width: 992px)
-  {
-    .card-deck .card {
-      -ms-flex: 0 0 24%;
-      flex: 0 0 24%;
-    }
-  }
-  .card-deck .card .face{
-    height: 200px;
-    transition: 0.5s;
-}
-.card-deck .card .face.card-head{
-    position: relative;
-    background: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(100px);
-}
-.card-deck .card:hover .face.card-head{
-    transform: translateY(0);
-}
-.card-deck .card .face.card-body{
-    position: relative;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    transform: translateY(-100px);
-}
-
-.card-deck .card:hover .face.card-body{
-    transform: translateY(0);
-}
-.card-deck .card .face.card-body .card-text{
-    margin: 0;
-    padding: 0;
-}
-.card-deck .card .face.card-body .card-text a{
-    margin: 15px 0 0;
-    display:  inline-block;
-    text-decoration: none;
-    font-weight: 900;
-    color: #333;
-    padding: 5px;
-    border: 1px solid #333;
-}
-
-.card-deck .card .face.card-body .card-text a:hover{
-    background: #333;
-    color: #fff;
-}

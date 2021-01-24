@@ -1,31 +1,67 @@
-.masthead {
-    min-height: 30rem;
-    position: relative;
-    display: table;
-    width: 100%;
-    height: auto;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../../src/assets/img/bg-masthead.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.container {
+    max-width: 960px;
   }
-  .btn-xl {
-    padding: 1.25rem 2.5rem;
+    /*
+   * Dummy devices (replace them with your own or something else entirely!)
+   */
+  
+  .product-device {
+    position: absolute;
+    right: 10%;
+    bottom: -30%;
+    width: 300px;
+    height: 540px;
+    background-color: #333;
+    border-radius: 21px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
   }
   
-  .content-section {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
+  .product-device::before {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+    bottom: 10%;
+    left: 10px;
+    content: "";
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 5px;
   }
   
-  .content-section-heading h2 {
-    font-size: 3rem;
+  .product-device-2 {
+    top: -25%;
+    right: auto;
+    bottom: 0;
+    left: 5%;
+    background-color: #e5e5e5;
   }
   
-  .content-section-heading h3 {
-    font-size: 1rem;
-    text-transform: uppercase;
+  
+  /*
+   * Extra utilities
+   */
+  
+  .border-top { border-top: 1px solid #e5e5e5; }
+  .border-bottom { border-bottom: 1px solid #e5e5e5; }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+  
+  .flex-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
   }
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      -ms-flex: 1;
+      -webkit-box-flex: 1;
+      flex: 1;
+    }
+  }
+  
+  .overflow-hidden { overflow: hidden; }
+  @media (max-width: 576px) {  
+    .xs {color:red;font-weight:bold;}
+  }
+  
   

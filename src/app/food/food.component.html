@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col ">
+            <mat-card id="card" style="text-align: center;">
+                <mat-card-title>
+                    Post Your Question On The Topic {{ topic }}
+                </mat-card-title>
+             <hr>
+                <mat-card-content>
+                    <mat-form-field appearance="fill">
+                        <mat-label> Topic</mat-label>
+                        <mat-select [(ngModel)] = "topic">
+                          <mat-option *ngFor="let topic of topicArray" [value]="topic.viewValue">
+                            {{topic.viewValue}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    <mat-form-field>
+                        <input matInput type="text" name="topicQuestion" placeholder="Add Your Question">
+                    </mat-form-field><br/>
+            
+                    <mat-form-field>
+                        <input matInput name = "topicAnswer" placeholder="Answer">
+                        <textarea matInput name = "topicAnswer" placeholder="Ex. It makes me feel..."></textarea>
+                    </mat-form-field><br/>
+                    <button class = "questionSubmit" mat-raised-button color="primary">Add</button>            
+                </mat-card-content>
+                </mat-card>
+                
+        </div> 
+</div>
+
+</div>

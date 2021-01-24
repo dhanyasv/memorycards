@@ -1,0 +1,76 @@
+/*
+For demo purpose
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Barrio');
+
+body {
+   margin-top: 15px;
+   margin-bottom: 15px;
+   background: url(http://cdn.backgroundhost.com/backgrounds/subtlepatterns/strange_bullseyes.png);
+   font-family: 'Roboto', sans-serif;
+   perspective: 1000;
+}
+
+h1, h2, h3, h4 {
+   font-family: 'Barrio', cursive;
+}
+
+.card-title {
+  max-width: 100%; 
+  font-size: 4vw;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {   
+   min-width: 100%;
+   height: 38vh;
+   min-height: 38vh;
+}
+
+.text-white .card-img {
+   filter: brightness(75%) saturate(50%);
+}
+
+
+/*
+Flip card
+*/
+.card-flip {
+
+   background: none;
+   border: none;
+   padding: 0;
+
+   .card {
+      backface-visibility: hidden;
+      transition: transform 300ms;
+      transition-timing-function: linear;
+      width: 100%;
+      height: 100%;
+      margin: 0;  
+   }
+
+   .card:first-of-type {
+      tranform: rotateY(0deg);
+   }
+
+   .card:last-of-type {
+      transform: rotateY(180deg);
+      // Put this in face with the larger content
+      position: absolute;
+      top: 0;
+      display: flex;
+   }
+
+   &:hover {
+      .card:first-of-type  {
+         transform: rotateY(-180deg);
+      }
+      .card:last-of-type {
+         transform: rotateY(0deg);
+      }
+   }
+
+}

@@ -12,6 +12,7 @@ interface Topic {
 })
 
 export class FoodComponent implements OnInit {
+    userName : any = '';
     topic : string = 'Science';
     topicQuestion : any = "Whats ur name?";
     topicAnswer : any = '';
@@ -22,6 +23,8 @@ export class FoodComponent implements OnInit {
       ];
 
     ngOnInit () {
+       
     }
+
 
 }

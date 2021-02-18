@@ -1,4 +1,13 @@
 <navbar></navbar>
+<button class="btn btn-primary"  (click)="addDetails()">
+  sddsdd
+      </button>
+      <p *ngIf="isDetailsShown">DHANYA</p>
+      <div *ngFor = "let buttonClick of buttonClickArray; let i= index" 
+      [ngStyle] = "{'background-color': ( i >= 5 ) ? 'yellow' : blue }"
+      [ngClass] = "{'whilteColorClass': ( i >= 5 ) }">
+      {{ buttonClick }}
+    </div>
 <router-outlet></router-outlet>
 <footer class="container py-5">
   <div class="row">
